@@ -58,9 +58,9 @@ class Locations extends Model {
         if (!empty($location)) {
 
             $location->location_name = $input['location_name'];
-            $location->location_alias = $input['location_alias'];
+            $location->location_alias = "0";
             //if($input['location_status'] != NULL){
-                $location->location_status = $input['location_status'];
+                $location->location_status = "1";
             //}
             $location->save();
 
